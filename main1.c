@@ -14,7 +14,6 @@ int main() {
          arr ar;
 
         
-    printf("please enter 50 numbers: ");
     for (int i=0 ; i<50; i++) {
         int x;
         scanf(" %d" , &x);
@@ -28,7 +27,10 @@ int main() {
     
     
     for (int i = 0; i< len; i++) {
-        printf("%d,", *(ar+i));
+        printf("%d", *(ar+i));
+        if(i!=len-1){
+            printf(",");
+        }
     }
     
         return 0;
